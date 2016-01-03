@@ -1,0 +1,31 @@
+{
+  "name": "dangerous-denver",
+  "version": "1.0.0",
+  "description": "Use open data from the City and County of Denver to figure out which corners and neighborhoods have the highest number of traffic accidents as well as the crime rate for each neighborhood in Denver.",
+  "main": "lib/index.js",
+  "scripts": {
+    "fetch-traffic-data": "curl http://data.denvergov.org/download/gis/traffic_accidents/csv/traffic_accidents.csv > data/traffic-accidents.csv",
+    "fetch-crime-data": "curl http://data.denvergov.org/download/gis/crime/csv/crime.csv > data/crime.csv",
+    "fetch-data": "npm run fetch-traffic-data && npm run fetch-crime-data",
+    "test": "mocha",
+    "start": "node ./lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevekinney/denver-traffic-accidents.git"
+  },
+  "keywords": [
+    "data",
+    "traffic",
+    "crime"
+  ],
+  "author": "Steve Kinney",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevekinney/denver-traffic-accidents/issues"
+  },
+  "homepage": "https://github.com/stevekinney/denver-traffic-accidents#readme",
+  "dependencies": {
+    "lodash": "^3.10.1"
+  }
+}
