@@ -133,4 +133,4 @@ The first five rows of the output should look something like this:
 In this phase you should continue to abstract your code into reuseable functions. When all is said and done, there should about be 2 or 3 more lines of code than for parsing just the traffic data.
 
 - Move reusable functions into their only module files.
-- You should be able to parse and display all of the data from Phase One, Phase Two, and Phase Three in under 10 seconds. (Ideally, it would be great if you could parse this all in under 8 seconds.)
+- You should be able to parse and display all of the data from Phase One, Phase Two, and Phase Three in around 11 seconds. (Ideally, it would be great if you could parse this all in under 8 seconds.)
