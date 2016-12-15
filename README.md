@@ -11,6 +11,10 @@ There are a few main focuses for this challenge:
 ## Installing Dependencies
 
 ```
+brew install wget
+```
+
+```
 npm install
 ```
 
